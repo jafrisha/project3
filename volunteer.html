@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- My external Style sheet -->
+    <link rel="stylesheet" href="mystyle.css">
+
+    <style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+body {
+  background-image: url('snow1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+    </style>
+
+  </head>
+
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="help.html">Help</a>
+  <a href="register.html">Register</a>
+  <a href="volunteer.html" class="active">Volunteer</a>
+  <a href="mail.html">Mail</a>
+  <a href="county.html">Different County?</a>
+</div>
+
+<div class="main">
+  <h1 style= "color: lightblue; background-color: white;"><center>WINTER VOLUNTEERS</center></h1>
+  <p style= "font-size: 25px; text-align: center; color: lightblue; background-color: white;"><b><i>Serving Middlesex County, New Jersey</i></b></p>
+
+<p style= "font-size: 24px; background-color: lightgoldenrodyellow;"><b>ATTENTION: You must be a resident of Middlesex County to use this service. Please click the "Home" link below to check if your municipality is available. If not, please click "Different County" to find the correct website.</b> </p>
+
+<p style= "font-size: 20px; background-color: lightblue;"><b>Please complete all fields of the form in order to register for a volunteer position:</b> </p>
+
+
+
+
+
+
+</div>
+
+<div class="main">
+  <h3 style= "font-size: 20px; background-color: lightblue;">You must be at least 14 years of age to volunteer -- those under 18 will require an additional verification of parental consent for pariticipation.</h3>
+  
+  <p>    <form>
+        <div class="container"> 
+            <label>Name : </label> 
+            <input type="text" placeholder="Enter your first and last name" name="username" required>
+
+            <label>Address : </label> 
+            <input type="text" placeholder="Enter your street address" name="address" required>
+
+            <label>City : </label> 
+            <input type="text" placeholder="Enter your city" name="city" required>
+            
+            <label>Zip Code : </label> 
+            <input type="text" placeholder="Enter your zip code" name="zipcode" required>
+
+            <label>Phone Number : </label> 
+            <input type="text" placeholder="Enter your direct cell phone number" name="phone" required>
+            
+            <label>E-mail : </label> 
+            <input type="text" placeholder="Enter your primary e-mail address" name="email" required>
+
+            <br>
+
+            <form action="/action_page.php">
+  <div class="container">
+  <label for="jobs">How many jobs in one day?</label>
+  <select id="jobs" name="jobs">
+    <option value="one">One</option>
+    <option value="two">Two</option>
+  </select>
+  
+</div>
+</form> <br>
+
+<form action="/action_page.php">
+  <div class="container">
+  <label for="days">How many consecutive days?</label>
+  <select id="days" name="days">
+    <option value="oneday">One</option>
+    <option value="twoday">Two</option>
+    <option value="threeday">Three or more</option>
+  </select>
+  
+</div>
+</form> <br>
+
+            <label>Age : </label> <br>
+            <input type="checkbox" > between 14-17 <br>
+            <input type="checkbox" > 18+ <br> <br>
+
+            <label>Proof of Residency in Middlesex County: <br>(upload a photo/scan of a document such as a utility bill, bank statement, payroll stub, etc.)</label><br>
+            <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            </form>
+
+            <button type="submit" onclick="alert('Submitted Successfully! We Will E-mail You Shortly with some Additional Details')">Register to Volunteer</button> 
+            
+
+            
+            <button type="reset" class="cancelbtn" value="Reset"> Reset</button> 
+            
+        </div> 
+    </form>  </p>
+  
+  
+</div>
+
+
+<p><img src="snow2.jpg" style="width: 100%;">
+</p>
+
+</body>
+</html>
